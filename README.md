@@ -1,2 +1,2 @@
 # design
-An HTML/SASS design for Tozti with reusable components.
+An HTML/SASS design for tozti with reusable components.
