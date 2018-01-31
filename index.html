@@ -2,17 +2,65 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Tozti</title>
-        <meta name="description" content="Tozti, des outils d'organisation pour votre association.">
+        <title>tozti</title>
+        <meta name="description" content="Tozti, organisez votre association.">
 
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="icon.png">
 
         <link rel="stylesheet" href="dist/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand|Barlow:300">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Inconsolata:300,400,500|Spectral">
     </head>
     <body>
+        <header class="main-header">
+            <section class="branding">
+                <a href="#"><img src="assets/img/logo.svg" alt="Logo" /></a>
+            </section>
+
+            <section class="search">
+                
+            </section>
+
+            <section class="user">
+                <a href="#" class="notifications">
+                    <i class="material-icons">notifications_none</i>
+                </a>
+
+                <a href="#" class="logged">
+                    <div class="avatar">
+                        <img src="https://placeimg.com/60/60/people" alt="Avatar de Romain">
+                    </div>
+
+                    Romain Liautaud
+ 
+                    <i class="material-icons">arrow_drop_down</i>
+                </a>
+            </section>
+        </header>
+
+        <section class="main-sidebar">
+            <nav>
+                <a href="#" class="active"><i class="icon-basic-home"></i> Accueil</a>
+                <a href="#"><i class="icon-basic-notebook"></i> Annuaire</a>
+                <a href="#"><i class="icon-basic-calendar"></i> Calendrier</a>
+                <a href="#"><i class="icon-basic-settings"></i> Préférences</a>
+            </nav>
+
+            <h3>ENScène</h3>
+            <nav>
+                <a href="#"><i class="icon-basic-rss"></i> Résumé</a>
+                <a href="#"><i class="icon-basic-calendar"></i> Calendrier</a>
+                <a href="#"><i class="icon-basic-folder-multiple"></i> Dossiers</a>
+            </nav>
+
+            <h3>BDE</h3>
+            <nav>
+                <a href="#"><i class="icon-basic-rss"></i> Résumé</a>
+                <a href="#"><i class="icon-basic-calendar"></i> Calendrier</a>
+                <a href="#"><i class="icon-basic-folder-multiple"></i> Dossiers</a>
+            </nav>
+        </section>
 
         <script src="dist/js/index.js"></script>
     </body>
