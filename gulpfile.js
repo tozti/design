@@ -12,7 +12,7 @@ var paths = {
 };
 
 gulp.task('clean', function() {
-    return del(['build']);
+    return del(['dist']);
 });
 
 gulp.task('scripts', ['clean'], function() {
@@ -21,7 +21,7 @@ gulp.task('scripts', ['clean'], function() {
           .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('fonts', function () {
+gulp.task('fonts', ['clean'], function () {
     return gulp.src(paths.fonts)
           .pipe(gulp.dest('dist/fonts'));
 });
@@ -45,6 +45,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['scripts']);
     gulp.watch(paths.images, ['images']);
+    gulp.watch(paths.fonts, ['fonts']);
     gulp.watch(paths.styles, ['sass']);
 });
 
