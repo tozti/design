@@ -46,6 +46,23 @@ body {
 
 .main-header .search {
 	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	font-size: 1.3em;
+	margin: 0 30px;
+}
+
+.main-header .search label {
+	line-height: .8em;
+}
+
+.main-header .search input {
+	border: 0;
+	flex-grow: 1;
+	margin-left: 20px;
+	padding: 6px 0;
+	outline: none;
+	font-family: $title-font;
 }
 
 .main-header .user {
@@ -83,7 +100,7 @@ body {
 	padding: $sidebar-padding;
 	box-sizing: border-box;
 
-	background: rgba(#fff, .3);
+	background: rgba(#fff, .8);
 	border-right: $separator-size solid #f4f4f4;
 	font-family: $title-font;
 }
