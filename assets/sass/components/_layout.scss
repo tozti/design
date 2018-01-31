@@ -1,7 +1,7 @@
 $header-height: 75px;
 
 $sidebar-width: 280px;
-$sidebar-padding: 35px;
+$sidebar-padding: 20px;
 
 $separator-size: 2px;
 $logo-size: 48px;
@@ -34,7 +34,7 @@ body {
 	width: $sidebar-width;
 	border-right: $separator-size solid $light-grey;
 	display: flex;
-	
+
 	justify-content: center;
 	align-items: center;
 
@@ -95,18 +95,21 @@ body {
 	text-decoration: none;
 	font-size: 1.2em;
 	color: $dark-grey;
-	line-height: 46px;
+	margin: 5px 0;
+	padding: 10px 13px;
+	border-radius: 3px;
 	font-family: $title-font;
 
 	i {
 		// display: none;
 		vertical-align: -4px;
-		margin: 0 10px 0 0;
+		margin: 0 12px 0 0;
 		font-size: 1.1em;
 	}
 }
 
 .main-sidebar nav a.active {
-	font-weight: bold;
+	background: lighten($primary, 44);
+	// font-weight: 500;
 	color: $primary;
 }
