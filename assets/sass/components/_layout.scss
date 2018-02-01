@@ -115,14 +115,15 @@ body {
 	border-left: $separator-size solid #f4f4f4;
 	border-right: $separator-size solid #f4f4f4;
 	font-family: $title-font;
+	font-weight: 300;
 }
 
 .main-sidebar h3 {
 	color: $dark-grey;
 	margin: 35px 0 10px;
 	text-transform: uppercase;
-	font-weight: 300;
 	font-size: 1em;
+	font-weight: 300;
 }
 
 .main-sidebar nav a {
@@ -155,6 +156,7 @@ body {
 }
 
 .main-sidebar nav a.active {
+	font-weight: 400;
 	background: lighten($primary, 44);
 	color: $primary;
 }
