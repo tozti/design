@@ -1,7 +1,7 @@
 $header-height: 72px;
-
 $sidebar-width: 290px;
 $sidebar-padding: 23px;
+$content-padding: 23px;
 
 $separator-size: 2px;
 $logo-size: 42px;
@@ -20,7 +20,7 @@ body {
 
 	z-index: 1;
 	background: #fff;
-	box-shadow: 0 0 5px rgba(#000, .08);
+	box-shadow: 0 0 6px rgba(#000, .07);
 	font-family: $title-font;
 
 	display: flex;
@@ -41,16 +41,8 @@ body {
 	align-items: center;
 	
 	img {
-		margin-right: -13px;
 		height: $logo-size;
 		vertical-align: text-bottom;
-	}
-
-	a {
-		text-decoration: none;
-		font-size: 1.9em;
-		color: $primary;
-		font-weight: 300;
 	}
 }
 
@@ -165,4 +157,10 @@ body {
 	color: lighten($primary, 8);
 	border-color: lighten($primary, 17);
 }
-	
+
+.main-content {
+	position: fixed;
+	left: $sidebar-width + $separator-size;
+	right: 0;
+	padding: $content-padding;
+}
