@@ -70,6 +70,33 @@
         </aside>
 
         <main class="main-content">
+
+<nav class="level">
+  <!-- Left side -->
+  <div class="level-left">
+    <div id="app" class="container">  
+    <section>
+        <b-pagination
+            :total="200"
+            :current="1"
+            :size="10"
+            :simple="false"
+            :rounded="true"
+            :per-page="20">
+        </b-pagination>
+    </section>
+    </div>
+    </div>
+  </div>
+
+  <!-- Right side -->
+  <div class="level-right">
+    <b-icon icon="alarm-light"></b-icon>
+    <b-icon icon="account-key"></b-icon>
+    <b-icon icon="settings"></b-icon>
+  </div>
+</nav>
+
 <p><article class="media">
   <figure class="media-left">
     <p class="image is-64x64">
