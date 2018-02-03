@@ -1,23 +1,46 @@
 #calendar-month {
     width: 100%;
     height: 800px;
+}
+
+#calendar-month-content {
+    width: 100%;
+    height: calc(100% - 50px);
     background-color: red;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 50px repeat(7, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    overflow: scroll;
+    position: relative;
 }
 
-#calendar-month-wrapper {
+.event {
     width: 100%;
-    height: 100%;
-    border-collapse: collapse;
+    height: 300px;
+    background-color: blue;
 }
 
-#calendar-month-spacer {
-    width: 50px;
-    height: 50px;
-    background-color: green;
-}
 
-tr, th {
+.calendar-entry {
     border: 1px solid black;
 }
+
+#spacer {
+    flex: 0 0 50px;
+}
+
+.calendar-title-day {
+    flex-grow: 1;
+}
+
+#calendar-month-header {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+
