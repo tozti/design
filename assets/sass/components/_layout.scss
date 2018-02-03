@@ -7,7 +7,7 @@ $separator-size: 2px;
 $logo-size: 42px;
 $avatar-size: 43px;
 
-body {
+html {
 	background: #f9f9f9;
 }
 
@@ -159,9 +159,8 @@ body {
 }
 
 .main-content {
-	position: fixed;
+	overflow: auto;
 	padding: $content-padding;
-	top: $header-height;
-	left: $sidebar-width + $separator-size;
-	right: 0;
+	margin-top: $header-height;
+	margin-left: $sidebar-width + $separator-size;
 }
