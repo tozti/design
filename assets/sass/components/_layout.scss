@@ -160,7 +160,8 @@ body {
 
 .main-content {
 	position: fixed;
+	padding: $content-padding;
+	top: $header-height;
 	left: $sidebar-width + $separator-size;
 	right: 0;
-	padding: $content-padding;
 }
