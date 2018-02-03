@@ -1,46 +1,78 @@
+$calendar-header-height: 80px;
+$calendar-entry-height: 80px;
+$calendar-left-margin: 60px;
+
 #calendar-month {
     width: 100%;
     height: 800px;
+    background-color: white;
 }
 
 #calendar-month-content {
     width: 100%;
-    height: calc(100% - 50px);
-    background-color: red;
+    height: calc(100% - $calendar-header-height);
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 50px repeat(7, 1fr);
-    grid-template-rows: repeat(6, 200px);
-    overflow: scroll;
+    grid-template-columns: $calendar-left-margin repeat(7, 1fr);
+    grid-template-rows: repeat(6, $calendar-entry-height);
+    overflow-y: scroll;
     position: relative;
 }
 
 .event {
     width: 100%;
-    height: 300px;
+    height: 80px;
     background-color: blue;
+    position: relative;
 }
 
 
 .calendar-entry {
-    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.calendar-entry .calendar-entry-inner {
+    height: 50%;
+    &:last-child {
+        border-bottom: 1px solid $dark-grey;
+    }
+    &:first-child {
+        border-bottom: 1px solid $light-grey;
+    }
 }
 
 #spacer {
-    flex: 0 0 50px;
+    flex: 0 0 $calendar-left-margin;
 }
 
 .calendar-title-day {
+    flex: 1;
     flex-grow: 1;
+    padding: 0 10px;
+    line-height: $calendar-header-height;
+
+    span {
+        font-size: 18px;
+        color: $black;
+        margin-right: 10px;
+    }
+    color: $dark-grey;
+    border-bottom: 1px solid $dark-grey;
 }
+
 
 #calendar-month-header {
     width: 100%;
-    height: 50px;
-    background-color: yellow;
+    height: $calendar-header-height;
+    //background-color: yellow;
     display: flex;
     flex-direction: row;
 }
 
-
+.calendar-time-cell {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    justify-content: flex-end;
+}
