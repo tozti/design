@@ -70,140 +70,85 @@
         </aside>
 
         <main class="main-content">
-
-<nav class="level">
-  <!-- Left side -->
-  <div class="level-left">
-    <div id="app" class="container">  
-    <section>
-        <b-pagination
-            :total="200"
-            :current="1"
-            :size="10"
-            :simple="false"
-            :rounded="true"
-            :per-page="20">
-        </b-pagination>
-    </section>
-    </div>
-    </div>
-  </div>
-
-  <!-- Right side -->
-  <div class="level-right">
-    <b-icon icon="alarm-light"></b-icon>
-    <b-icon icon="account-key"></b-icon>
-    <b-icon icon="settings"></b-icon>
-  </div>
-</nav>
-
-<p><article class="media">
-  <figure class="media-left">
-    <p class="image is-64x64">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
-    </p>
-  </figure>
-  <div class="media-content">
-    <div class="content">
-      <p>
-        <strong>Fenril Montorier</strong>, samedi 03/02/2018 à 18:44
-        <br>
-       Salut il faut organiser la soirée Saint Valentin·e
-        <br>
-        <small><a>Marquer comme important</a> · <a>Répondre</a> · <a>Créer un fil à partir de commentaire</a> </small>
-      </p>
-    </div>
-
-   <button class="button is-text" onclick="myFunction()">Montrer les réponses</button>
-   <div id="answers" style="display: none;">
-
-    <article class="media">
-      <figure class="media-left">
-        <p class="image is-48x48">
-          <img src="https://bulma.io/images/placeholders/96x96.png">
-        </p>
-      </figure>      
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>Emmanuel Rodriguez</strong>, samedi 03/02/2018 à 19:14
-            <br>
-            Non mais vous êtes dingues la saint Valentine c'est pas le même jour que la saint Valentin c'est une hérésie sans nom.
-            <br>
-            <small><a>Marquer comme important</a> · <a>Créer un fil à partir de commentaire</a></small>
-          </p>
+            
+        <style>
+            
+            .main-dir{
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 250%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+                margin-top: 1%;
+            }
+            
+            ul{
+                list-style: none;
+            }
+            
+            li{
+                list-style-position:inside;
+                border: 1px solid black;
+                border-radius: 17px;
+                padding: 0.7%; 
+                margin: 0 30% 4% 1%;
+                font-size: 120%;     
+            }
+            
+           
+            
+            a:link{
+                text-decoration: none;
+                color: red;
+            }    
+            
+            .file{
+                color: lightcoral;
+            }
+            
+            .thread a{
+                color: lightsteelblue;
+            }
+            
+            .file-notif a{
+                color: lightseagreen;
+            }
+            
+            
+        </style>
+            
+            
+        <div class="main-dir">
+            Fichiers récents
         </div>
-      </div>
-    </article>
-
-    <article class="media">
-      <figure class="media-left">
-        <p class="image is-48x48">
-          <img src="https://bulma.io/images/placeholders/96x96.png">
-        </p>
-      </figure>
-      <div class="media-content">
-        <div class="content">
-          <p>
-            <strong>Lucas Perotin</strong>, samedi 03/02/2018 à 19:16
-            <br>
-            zizi lol
-	    j'appelle la police <strong>@anoiret</strong>
-            <br>
-            <small><a>Marquer comme important</a> · <a>Créer un fil à partir de commentaire</a> </small>
-          </p>
-        </div>
-      </div>
-    </article>
-  </div>
-</div>
-
-</article>
-<article class="media">
-  <figure class="media-left">
-    <p class="image is-64x64">
-      <img src="https://bulma.io/images/placeholders/128x128.png">
-    </p>
-  </figure>
-  <div class="media-content">
-    <div class="field">
-      <p class="control">
-        <textarea class="textarea" placeholder="Add a comment..."></textarea>
-      </p>
-    </div>
-    <div class="file has-name">
-      <label class="file-label">
-	<input class="file-input" type="file" name="resume">
-	<span class="file-cta">
-	  <span class="file-icon">
-            <i class="fas fa-upload"></i>
-	  </span>
-	  <span class="file-label">
-            Choose a file…
-	  </span>
-	</span>
-	<span class="file-name">
-	</span>
-      </label>
-    </div>
-    <div class="field">
-      <p class="control">
-        <button class="button">Poster un commentaire</button>
-      </p>
-    </div>
-  </div>
-</article></p>
+            
+        <ul>
+            <li class="file-notif"> Le fichier <span class="file" href=""> 'CR du 29/01.pdf'</span> a été mis à votre disposition.  <a href="">@ENScène</a></li>
+            <li class="thread">"Est-ce quelqu'un s'occupe de faire l'affiche du prochain spectacle ?  Le visuel est là : <span class="file" href="">'affiche.png'</span>" - Lena Duval  <a href="">#CA-Enscène</a></li>
+            <li class="file-notif">Le fichier <span class="file" href="">'projet WIFI.md'</span> a été mis à votre disposition.  <a href="">@AliENS</a></li>
+                <li class="file-notif">Le fichier <span class="file" href="">'tupperVim slides.rst'</span> a été mis à votre disposition.  <a href="">@AliENS</a></li>
+            <li class="thread">Voici la liste des membres du CA <span class="file" href="">'CA.pdf'</span> - Caroline Derss  <a href="">#CA-Enscène</a></li>
+        </ul>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </main>
-	<script>
-function myFunction() {
-    var x = document.getElementById("answers");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-	</script>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="dist/js/index.js"></script>
     </body>
