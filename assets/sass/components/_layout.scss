@@ -1,7 +1,7 @@
-$header-height: 72px;
+$header-height: 70px;
 $sidebar-width: 290px;
-$sidebar-padding: 23px;
-$content-padding: 23px;
+$sidebar-padding: 20px;
+$content-padding: 20px;
 
 $separator-size: 2px;
 $logo-size: 42px;
@@ -83,7 +83,6 @@ html {
 
 .main-header .notifications {
 	font-size: 1.3em;
-	line-height: .6em;
 }
 
 .main-header .avatar {
@@ -138,12 +137,12 @@ html {
 .main-sidebar nav .counter {
 	float: right;
 	font-size: 15px;
-	margin-top: -2px;
-	padding: 2px 6px;
+	padding: 0 6px;
+	line-height: 1.4;
 	color: lighten($dark-grey, 22);
 	border: 2px solid lighten($dark-grey, 32);
 	border-radius: 20px;
-	min-width: 16px;
+	min-width: 30px;
 	text-align: center;
 }
 
