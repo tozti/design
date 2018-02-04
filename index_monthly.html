@@ -1,71 +1,181 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
         <title>tozti</title>
         <meta name="description" content="Organisez votre association avec tozti.">
 
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="./layout-monthly.css">
-</head>
-<body>
+        <link rel="apple-touch-icon" href="icon.png">
 
-<div class="month">      
-  <ul>
-    <li>
-        <input type="button" value=">" style="float: right;">
-        <input type="button" value="<" style="float: right;">
-        Février<br>
-        <span style="font-size:18px">2018</span>
-    </li>
-  </ul>
-</div>
+        <link rel="stylesheet" href="dist/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Open+Sans">
+    </head>
+    <body>
+        <header class="main-header">
+            <section class="branding">
+                <a href="#"><img src="assets/img/logo.svg" alt="tozti" /></a>
+            </section>
 
-<ul class="weeks">
-  <li>Lundi</li>
-  <li>Mardi</li>
-  <li>Mercredi</li>
-  <li>Jeudi</li>
-  <li>Vendredi</li>
-  <li>Samedi</li>
-  <li>Dimanche</li>
-</ul>
+            <section class="search">
+                <label for="search-field">
+                    <i class="nc-icon nc-zoom-2"></i>
+                </label>
 
-<ul class="days">  
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
+                <input type="text" id="search-field" placeholder="Rechercher des dossiers, des discussions, etc." />
+            </section>
 
-</body>
+            <section class="user">
+                <a href="#" class="notifications">
+                    <i class="nc-icon nc-bell-53"></i>
+                </a>
+
+                <a href="#" class="logged">
+                    <div class="avatar">
+                        <img src="https://placeimg.com/60/60/people" alt="Avatar de Romain">
+                    </div>
+
+                    Romain
+ 
+                    <i class="material-icons">arrow_drop_down</i>
+                </a>
+            </section>
+        </header>
+
+        <aside class="main-sidebar">
+            <nav>
+                <a href="#" class="active"><i class="nc-icon nc-home-52"></i> Accueil <span class="counter">6</span></a>
+                <a href="#"><i class="nc-icon nc-badge-13"></i> Annuaire</a>
+                <a href="#"><i class="nc-icon nc-calendar-60"></i> Calendrier</a>
+                <a href="#"><i class="nc-icon nc-settings-gear-63"></i> Préférences</a>
+            </nav>
+
+            <h3>ENScène</h3>
+            <nav>
+                <a href="#"><i class="nc-icon nc-grid-45"></i> Résumé</a>
+                <a href="#"><i class="nc-icon nc-calendar-60"></i> Calendrier</a>
+                <a href="#"><i class="nc-icon nc-folder-15"></i> Clubs</a>
+                <a href="#"><i class="nc-icon nc-folder-15"></i> Événements <span class="counter">3</span></a>
+                <a href="#"><i class="nc-icon nc-folder-15"></i> Administratif</a>
+            </nav>
+
+            <h3>BDE</h3>
+            <nav>
+                <a href="#"><i class="nc-icon nc-grid-45"></i> Résumé</a>
+                <a href="#"><i class="nc-icon nc-calendar-60"></i> Calendrier</a>
+                <a href="#"><i class="nc-icon nc-folder-15"></i> Dossiers <span class="counter">12</span></a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <style>
+                
+            ul {list-style-type: none;}
+            body {font-family: Roboto, sans-serif;}
+
+
+            .month ul li {
+                color: brown;
+                font-size: 140%;
+                letter-spacing: 3px;
+            }
+
+            .weeks {
+                margin: 0;
+                padding: 10px 0;
+            }
+
+            .weeks li {
+                display: inline-block;
+                width: 13.6%;
+                text-align: center;
+                color: black
+            }
+
+            .days {
+                padding: 10px 0;
+                margin: 0;
+            }
+
+            .days li {
+                list-style-type: inside;
+                border: 1px solid black;
+                border-radius: 3px;
+                display: inline-block;
+                width: 13.6%;
+                text-align: center;
+                font-size:12px;
+                color: brown;
+                padding-bottom: 5.4%;
+                padding-top: 0.5%;
+                margin-bottom: 0.5%;
+            }
+            </style>
+            
+            
+            
+            <div class="month">      
+              <ul>
+                <li>
+                    <input type="button" value=">" style="float: right;">
+                    <input type="button" value="<" style="float: right;">
+                    Février<br>
+                    <span style="font-size:18px">2018</span>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="weeks">
+              <li>Lundi</li>
+              <li>Mardi</li>
+              <li>Mercredi</li>
+              <li>Jeudi</li>
+              <li>Vendredi</li>
+              <li>Samedi</li>
+              <li>Dimanche</li>
+            </ul>
+
+            <ul class="days">  
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+
+         
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="dist/js/index.js"></script>
+    </body>
 </html>
+
+
