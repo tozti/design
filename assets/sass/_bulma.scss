@@ -1,6 +1,5 @@
 // Import Bulma's core
-// TODO: maybe webpack?
-@import "../../node_modules/bulma/sass/utilities/all";
+@import "~bulma/sass/utilities/all";
 
 // Custom colors
 $primary-invert: findColorInvert($primary);
@@ -12,5 +11,5 @@ $link-focus-border: $primary;
 $family-primary: $text-font;
 
 // Import Bulma and Buefy styles
-@import "../../node_modules/bulma/bulma";
-@import "../../node_modules/buefy/src/scss/buefy";
+@import "~bulma/bulma";
+@import "~buefy/src/scss/buefy";
