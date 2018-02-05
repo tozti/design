@@ -1,8 +1,13 @@
+
+import Hello from './components/test.vue';
+
 import Vue from 'vue'
 import Buefy from 'buefy'
 
 Vue.use(Buefy)
 
-let app = new Vue({
-  el: '.main-content',
+new Vue({
+  el: '.app',
+    render: h => h(Hello)
+
 })
