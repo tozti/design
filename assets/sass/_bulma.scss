@@ -11,6 +11,7 @@ $text: $black;
 
 // Custom fonts
 $family-primary: $text-font;
+$size-normal: $size-6 * 0.98;
 
 // Import Bulma and Buefy styles
 @import "~bulma/bulma";
