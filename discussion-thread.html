@@ -71,17 +71,13 @@
 
         <main class="main-content">
             <section class="thread-container">
-                <section class="level">
+                <section class="level main-title">
                     <h2 class="level-left">
                         <i class="material-icons">chat_bubble_outline</i> Soirée Années 3000
                     </h2>
-                    <div class="level-right">
-                        <!-- <a class="button is-outlined is-primary"><i class="material-icons">reply</i>&nbsp; Répondre</a> -->
-                        <!-- <a class="button is-outlined is-black"><i class="material-icons">arrow_downward</i>&nbsp; Aller au dernier non-lu</a> -->
-                    </div>
                 </section>
 
-                <section class="boxed thread">
+                <section class="thread boxed">
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-64x64">
@@ -299,6 +295,40 @@
                         </div>
                     </article>
                 </section>
+
+                <!-- <section class="reply media floating"> -->
+                <section class="reply media">
+                    <figure class="media-left">
+                        <p class="image is-64x64">
+                            <img src="https://placeimg.com/128/128/people?6">
+                        </p>
+                    </figure>
+                    
+                    <div class="media-content">
+                        <div class="content">
+                            <p class="author">
+                                <strong>Romain Liautaud</strong>
+                            </p>
+                            
+                            <textarea class="textarea" placeholder="Saisissez votre message"></textarea>
+                        </div>
+
+                        <div class="level">
+                            <div class="level-left toolbox">
+                                <a href="#" class="button is-light"><i class="material-icons">format_bold</i></a>
+                                <a href="#" class="button is-light"><i class="material-icons">format_italic</i></a>
+                                <a href="#" class="button is-light"><i class="material-icons">format_underlined</i></a>
+                                <a href="#" class="button is-light"><i class="material-icons">functions</i></a>
+                                <a href="#" class="button is-light"><i class="material-icons">attach_file</i></a>
+                                <a href="#" class="button is-light"><i class="material-icons">person</i></a>
+                            </div>
+
+                            <div class="level-right">
+                                <a href="#" class="button is-primary"><i class="material-icons">send</i>&nbsp; Envoyer</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <aside class="thread-aside">
@@ -307,6 +337,19 @@
                     <a class="button is-light"><i class="material-icons">notifications_none</i>&nbsp; Suivre</a>
                     <a class="button is-light"><i class="material-icons">attachment</i>&nbsp; Pièces jointes</a>
                     <a class="button is-light"><i class="material-icons">subdirectory_arrow_right</i>&nbsp; Dernier non-lu</a>
+
+                    <nav class="scrubber">
+                        <p><i class="material-icons">arrow_upward</i> Premier message</p>
+                        
+                        <div class="area">
+                            <div class="current">
+                                <strong>1 sur 10 messages</strong>
+                                <time>Janvier 2018</time>
+                            </div>
+                        </div>
+                        
+                        <p><i class="material-icons">arrow_downward</i> Maintenant</p>
+                    </nav>
                 </div>
             </aside>
         </main>
