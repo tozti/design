@@ -18,8 +18,18 @@ $thread-width: 900px;
 }
 
 .thread .media.important {
-	box-shadow: 0 0 2px rgba($danger, .2);
 	background: rgba($danger, .03);
+}
+
+.thread .important-tag {
+	color: $danger;
+	font-size: 13px;
+	margin-left: 10px;
+
+	i {
+		vertical-align: -3px;
+		font-size: 16px !important;
+	}
 }
 
 .thread .media.event {
