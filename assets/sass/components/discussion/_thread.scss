@@ -1,5 +1,9 @@
 $post-padding: 1.7rem;
 
+.thread-container {
+	max-width: 1000px;
+}
+
 .thread .media {
 	padding: $post-padding;
 	padding-bottom: $post-padding - .9rem;
@@ -42,4 +46,28 @@ $post-padding: 1.7rem;
 
 .thread .content:hover .actions {
 	visibility: visible;
+}
+
+.thread-aside {
+	margin-left: 40px;
+	margin-top: 3px;
+}
+
+.thread-aside .inner {
+	position: fixed;
+	width: 180px;
+	height: 200px;
+}
+
+.thread-aside .button {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 10px;
+	height: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.thread-aside .button.is-primary {
+	margin-bottom: 32px;
 }

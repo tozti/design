@@ -172,18 +172,18 @@ html {
 
 .main-content h2 {
 	font-size: 1.6rem;
-	margin-top: .2rem;
+	margin-top: 5px;
 }
 
 .main-content .level {
-	margin-bottom: 1.7rem;
-}
+	margin-bottom: 30px;
 
-.main-content .level-right .button {
-	font-size: .96rem;
-	margin-left: .8rem;
-}
+	.button {
+		font-size: .96rem;
+		margin-left: 10px;
+	}
 
-.main-content h2 i {
-	margin-right: 1.2rem;
+	h2 i {
+		margin-right: 20px;
+	}
 }
