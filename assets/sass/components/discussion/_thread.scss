@@ -1,0 +1,45 @@
+$post-padding: 1.7rem;
+
+.thread .media {
+	padding: $post-padding;
+	padding-bottom: $post-padding - .9rem;
+	text-align: justify;
+
+	.image {
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 8px;
+	}
+}
+
+.thread .media.slim {
+	display: block;
+	padding-left: 7.2rem;
+	font-size: .85rem;
+	padding-top: $post-padding * .6;
+	padding-bottom: $post-padding * .6;
+	opacity: .9;
+}
+
+.thread .media + .media {
+	margin-top: 0;
+	border-bottom-color: $separator-color;
+}
+
+.thread .media .content + .media {
+	margin-top: $post-padding - .9rem;
+}
+
+.thread .actions {
+	visibility: hidden;
+	text-align: right;
+	padding: 5px 0 0;
+
+	a {
+		color: $grey;
+	}
+}
+
+.thread .content:hover .actions {
+	visibility: visible;
+}
