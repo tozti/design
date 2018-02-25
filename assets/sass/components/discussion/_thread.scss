@@ -7,7 +7,7 @@ $thread-width: 900px;
 
 .thread .media {
 	padding: $post-padding;
-	padding-bottom: $post-padding - .9rem;
+	padding-bottom: $post-padding - .7rem;
 	text-align: justify;
 
 	.image {
@@ -58,18 +58,24 @@ $thread-width: 900px;
 	margin-top: $post-padding - .9rem;
 }
 
+.thread .status {
+	padding: 5px 0 0;
+	font-size: 13px;
+
+	i {
+		margin-right: 3px;
+		vertical-align: -2px;
+	}
+}
+
 .thread .actions {
 	visibility: hidden;
+	padding: 7px 0 0;
 	text-align: right;
-	padding: 5px 0 0;
 
 	a {
 		color: $grey;
 	}
-}
-
-.thread .content p {
-	margin-bottom: 1em;
 }
 
 .thread .content:hover .actions {
